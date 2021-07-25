@@ -25,7 +25,6 @@ public class MakeChange {
 		givenAmount = scan.nextDouble();
 
 		change = givenAmount - price;
-		System.out.println("The price is " + price + " the customer gave " + givenAmount);
 
 		int numTwenties = 0;
 		int numTens = 0;
@@ -36,44 +35,45 @@ public class MakeChange {
 		int numNickles = 0;
 		int numPennies = 0;
 
-		while (givenAmount > price) {
+		if (givenAmount > price) {
 
 			numTwenties = (int) (change / twenty);
-			change %= twenty;
+			//change %= twenty;
 
 			numTens = (int) (change / ten);
-			change %= ten;
+			//change %= ten;
 
 			numFives = (int) (change / five);
-			change %= five;
+			//change %= five;
 
 			numOnes = (int) (change / dollar);
-			change %= dollar;
+			//change %= dollar;
 
 			numQuarters = (int) (change / quarter);
-			change %= quarter;
+			//change %= quarter;
 
 			numDimes = (int) (change / dime);
-			change %= dime;
+			//change %= dime;
 
 			numNickles = (int) (change / nickle);
-			change %= nickle;
+			//change %= nickle;
 
 			numPennies = (int) Math.round(change / penny);
-			change %= penny;
+			//change %= penny;
 
 			System.out.println("Change due is: " + numTwenties + " twenties " + numTens + " tens " + numFives
 					+ " fives " + numOnes + " ones " + numQuarters + " quarters " + numDimes + " dimes " + numNickles
 					+ " nickles " + numPennies + " pennies.");
-			break;
+			
 
 		}
 		if (givenAmount < price) {
 			System.out.println(" ERROR : The price is " + price + " you have only given " + givenAmount);
 		} else if (price == givenAmount) {
 			System.out.println("Exact change!");
-
+			
 		}
+		//System.out.println("The price is " + price + " the customer gave " + givenAmount + " change due is " + change);
 
 	}
 
