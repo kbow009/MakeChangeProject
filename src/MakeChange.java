@@ -38,28 +38,28 @@ public class MakeChange {
 		if (givenAmount > price) {
 
 			numTwenties = (int) (change / twenty);
-			//change %= twenty;
+			change %= twenty;
 
 			numTens = (int) (change / ten);
-			//change %= ten;
+			change %= ten;
 
 			numFives = (int) (change / five);
-			//change %= five;
+			change %= five;
 
 			numOnes = (int) (change / dollar);
-			//change %= dollar;
+			change %= dollar;
 
 			numQuarters = (int) (change / quarter);
-			//change %= quarter;
+			change %= quarter;
 
 			numDimes = (int) (change / dime);
-			//change %= dime;
+			change %= dime;
 
 			numNickles = (int) (change / nickle);
-			//change %= nickle;
+			change %= nickle;
 
 			numPennies = (int) Math.round(change / penny);
-			//change %= penny;
+			change %= penny;
 
 			System.out.println("Change due is: " + numTwenties + " twenties " + numTens + " tens " + numFives
 					+ " fives " + numOnes + " ones " + numQuarters + " quarters " + numDimes + " dimes " + numNickles
