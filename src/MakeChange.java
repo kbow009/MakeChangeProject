@@ -73,7 +73,6 @@ public class MakeChange {
 			System.out.println("Exact change!");
 			
 		}
-		//System.out.println("The price is " + price + " the customer gave " + givenAmount + " change due is " + change);
 
 	}
 
