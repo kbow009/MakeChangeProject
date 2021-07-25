@@ -14,9 +14,11 @@ The user is asked to enter the price of the item then asked how much the custome
 
 * Modulus Operator
 * Conditionals
-* While Loops
 * If else statements
+* Casting
 
 ### Lessons learned
-Learned the use of Math.round() and %= as well as while loops.
+* Math.round()
+* if else
+* Casting
 # MakeChangeProject
