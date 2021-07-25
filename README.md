@@ -2,18 +2,21 @@
 
 ### Overview
 
-Explain the basic idea of the project
+The user is asked to enter the price of the item then asked how much the customer gave. The program will then print how much money to give back to the customer.
 
 ### how to use
 
-provides the user instructions on how to run your project
+1) Enter the price.
+2) Enter amount given by the customer.
+3) Read the screen to determine what change to return to the customer.
 
 ### Technologies
 
 * Modulus Operator
 * Conditionals
-* Loops
+* While Loops
+* If else statements
 
 ### Lessons learned
-Main takeaways from work on the project
+Learned the use of Math.round() and %= as well as while loops.
 # MakeChangeProject
